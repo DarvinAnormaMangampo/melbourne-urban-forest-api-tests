@@ -1,0 +1,15 @@
+﻿{
+  "name": "melbourne-urban-forest-api-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Independent API testing project for Melbourne Urban Forest open data",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "preflight": "node scripts/preflight.cjs",
+    "test": "playwright test",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "startedAtUtc": "2026-10-13T03:12:20.536Z",
+  "dataset": "trees-with-species-and-dimensions-urban-forest",
+  "node": "v24.19.0",
+  "playwright": "1.64.0",
+  "requests": [
+    {
+      "name": "sorted records",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=5&order_by=com_id+ASC",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "dataset metadata",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "genus filter",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=genus+%3D+%27Ulmus%27&limit=2",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "unknown where field",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=field_that_does_not_exist+%3D+1&limit=1",
+      "status": 400,
+      "contentType": "application/json"
+    },
+    {
+      "name": "unknown order_by field",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?order_by=field_that_does_not_exist&limit=1",
+      "status": 400,
+      "contentType": "application/json"
+    },
+    {
+      "name": "limit 100",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=100",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "limit 101",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=101",
+      "status": 400,
+      "contentType": "application/json"
+    },
+    {
+      "name": "next sorted page",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=5&offset=5&order_by=com_id+ASC",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "com_id lookup",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=com_id+%3D+%271013381%27&limit=2",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "unused com_id",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=com_id+%3D+%27999999999%27&limit=1",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "offset plus limit 10000",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=100&offset=9900",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "name": "offset plus limit 10001",
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=100&offset=9901",
+      "status": 400,
+      "contentType": "application/json"
+    }
+  ],
+  "observations": {
+    "records": {
+      "totalCount": 82064,
+      "rowCount": 5,
+      "fields": [
+        "com_id",
+        "common_name",
+        "scientific_name",
+        "genus",
+        "family",
+        "diameter_breast_height",
+        "year_planted",
+        "date_planted",
+        "age_description",
+        "useful_life_expectency",
+        "useful_life_expectency_value",
+        "precinct",
+        "located_in",
+        "uploaddate",
+        "coordinatelocation",
+        "latitude",
+        "longitude",
+        "easting",
+        "northing",
+        "geolocation"
+      ]
+    },
+    "metadata": {
+      "recordsCount": 82064
+    },
+    "filter": {
+      "selectedGenus": "Ulmus",
+      "allRowsMatch": true
+    },
+    "invalidWhere": {
+      "status": 400,
+      "message": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): where."
+    },
+    "invalidOrder": {
+      "status": 400,
+      "message": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): order_by."
+    },
+    "pageSize": {
+      "limit100Status": 200,
+      "limit100Rows": 100,
+      "limit101Status": 400,
+      "limit101Message": "Invalid value for limit API parameter: 101 was found but -1 <= limit <= 100 is expected."
+    },
+    "pagination": {
+      "noRepeatedComId": true
+    },
+    "lookup": {
+      "source": {
+        "com_id": "1013381",
+        "genus": "Ulmus"
+      },
+      "returned": {
+        "com_id": "1013381",
+        "genus": "Ulmus"
+      },
+      "idMatches": true,
+      "genusMatches": true
+    },
+    "missingAsset": {
+      "status": 200,
+      "totalCount": 0,
+      "returnedRows": 0
+    },
+    "pagingEdge": {
+      "at10000": {
+        "status": 200,
+        "rows": 100,
+        "message": null
+      },
+      "at10001": {
+        "status": 400,
+        "rows": null,
+        "message": "Invalid value for sum of offset + limit API parameter: 10001 was found but <= 10000 is expected."
+      }
+    },
+    "countMatches": true
+  },
+  "decision": "ready",
+  "finishedAtUtc": "2026-10-13T03:12:33.062Z"
+}
