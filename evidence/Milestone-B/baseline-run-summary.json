@@ -1,0 +1,102 @@
+{
+  "runStartUtc": "2026-10-15T06:26:53.215499Z",
+  "runEndUtc": "2026-10-15T06:27:19.846866Z",
+  "runDateLocal": "2026-10-15",
+  "timeZone": "UTC+08:00",
+  "command": "node ../../../node_modules/@playwright/test/cli.js test --config playwright.config.ts --reporter=list,html",
+  "nodeVersion": "v24.19.0",
+  "pnpmVersionAvailable": "11.25.0",
+  "playwrightVersion": "1.64.0",
+  "configuration": {
+    "workers": 1,
+    "fullyParallel": false,
+    "retries": 0,
+    "maxFailures": 1,
+    "pauseBeforeEachGetMs": 700
+  },
+  "conditions": 8,
+  "testExecutions": 10,
+  "passed": 10,
+  "failed": 0,
+  "skipped": 0,
+  "requestCount": 13,
+  "httpStatusCounts": {
+    "200": 10,
+    "400": 3
+  },
+  "commitIdAtExecution": null,
+  "sourceFileSha256": {
+    "tests/urban-forest.api.spec.ts": "e89864f42056302c942425a34d5be52bbad3542bd6689913ae0b9ffafc461316",
+    "test-data/boundary-cases.json": "f91791322df4edc57b6238fcd8067daec7d81514879ce81463bed184ad5336d9",
+    "playwright.config.ts": "8e5fcc0574f993ab9107abe0c92866cde9a0560929eb20eb0e487ce5b19934c2",
+    "package.json": "05b9b3e612868c8c2fe6f8f0509cf3560beba156e5d05b243281f7f8609c0d13",
+    "pnpm-lock.yaml": "b49da3af4742063bd146beaebbbc9cb985f99d3b6a993a75b163d1c8538742db"
+  },
+  "testCases": [
+    {
+      "id": "T01",
+      "name": "T01 Availability and shape @smoke",
+      "outcome": "passed",
+      "requestCount": 2
+    },
+    {
+      "id": "T02",
+      "name": "T02 Bounded pagination",
+      "outcome": "passed",
+      "requestCount": 2
+    },
+    {
+      "id": "T03",
+      "name": "T03 Tree lookup consistency",
+      "outcome": "passed",
+      "requestCount": 1
+    },
+    {
+      "id": "T04",
+      "name": "T04 Genus filter accuracy",
+      "outcome": "passed",
+      "requestCount": 1
+    },
+    {
+      "id": "T07",
+      "name": "T07 Dataset total comparison",
+      "outcome": "passed",
+      "requestCount": 2
+    },
+    {
+      "id": "T08",
+      "name": "T08 Unknown tree ID",
+      "outcome": "passed",
+      "requestCount": 1
+    },
+    {
+      "id": "T05",
+      "name": "T05 Page-size boundary 100 records",
+      "outcome": "passed",
+      "requestCount": 1
+    },
+    {
+      "id": "T05",
+      "name": "T05 Page-size boundary 101 records",
+      "outcome": "passed",
+      "requestCount": 1
+    },
+    {
+      "id": "T06",
+      "name": "T06 Invalid query field in where",
+      "outcome": "passed",
+      "requestCount": 1
+    },
+    {
+      "id": "T06",
+      "name": "T06 Invalid query field in order_by",
+      "outcome": "passed",
+      "requestCount": 1
+    }
+  ],
+  "artifacts": {
+    "htmlReport": "html-report/index.html",
+    "console": "run-console.txt",
+    "testEvidence": "test-evidence.json"
+  }
+}

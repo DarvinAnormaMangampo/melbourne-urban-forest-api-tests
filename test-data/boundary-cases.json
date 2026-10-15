@@ -1,0 +1,12 @@
+[
+  {
+    "name": "100 records",
+    "limit": 100,
+    "expectedStatus": 200
+  },
+  {
+    "name": "101 records",
+    "limit": 101,
+    "expectedStatus": 400
+  }
+]
