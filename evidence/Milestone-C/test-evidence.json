@@ -1,0 +1,473 @@
+{
+  "runDate": "2026-10-16",
+  "timeZone": "+08:00",
+  "requestCount": 13,
+  "requests": [
+    {
+      "sequence": 1,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=5&order_by=com_id+ASC",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 5,
+        "totalCount": 82064,
+        "comIds": [
+          "1013381",
+          "1013382",
+          "1013383",
+          "1013384",
+          "1013385"
+        ],
+        "genusValues": [
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus"
+        ]
+      }
+    },
+    {
+      "sequence": 2,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=5",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 5,
+        "totalCount": 82064,
+        "comIds": [
+          "1023218",
+          "1023221",
+          "1023222",
+          "1023224",
+          "1023225"
+        ],
+        "genusValues": [
+          "Platanus",
+          "Platanus",
+          "Platanus",
+          "Platanus",
+          "Platanus"
+        ]
+      }
+    },
+    {
+      "sequence": 3,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=5&offset=0&order_by=com_id+ASC",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 5,
+        "totalCount": 82064,
+        "comIds": [
+          "1013381",
+          "1013382",
+          "1013383",
+          "1013384",
+          "1013385"
+        ],
+        "genusValues": [
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus"
+        ]
+      }
+    },
+    {
+      "sequence": 4,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=5&offset=5&order_by=com_id+ASC",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 5,
+        "totalCount": 82064,
+        "comIds": [
+          "1013386",
+          "1013387",
+          "1013392",
+          "1013394",
+          "1013395"
+        ],
+        "genusValues": [
+          "Corymbia",
+          "Corymbia",
+          "Corymbia",
+          "Corymbia",
+          "Corymbia"
+        ]
+      }
+    },
+    {
+      "sequence": 5,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=com_id+%3D+%271013381%27&limit=2",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 1,
+        "totalCount": 1,
+        "comIds": [
+          "1013381"
+        ],
+        "genusValues": [
+          "Ulmus"
+        ]
+      }
+    },
+    {
+      "sequence": 6,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=genus+%3D+%27Ulmus%27&limit=5",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 5,
+        "totalCount": 6102,
+        "comIds": [
+          "1286339",
+          "1286450",
+          "1286534",
+          "1286538",
+          "1286541"
+        ],
+        "genusValues": [
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus"
+        ]
+      }
+    },
+    {
+      "sequence": 7,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=1",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 1,
+        "totalCount": 82064,
+        "comIds": [
+          "1023218"
+        ],
+        "genusValues": [
+          "Platanus"
+        ]
+      }
+    },
+    {
+      "sequence": 8,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "metadataRecordsCount": 82064
+      }
+    },
+    {
+      "sequence": 9,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=com_id+%3D+%27999999999%27&limit=1",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 0,
+        "totalCount": 0,
+        "comIds": [],
+        "genusValues": []
+      }
+    },
+    {
+      "sequence": 10,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=100",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "responseSummary": {
+        "resultCount": 100,
+        "totalCount": 82064
+      }
+    },
+    {
+      "sequence": 11,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?limit=101",
+      "status": 400,
+      "contentType": "application/json",
+      "responseSummary": {
+        "errorBody": {
+          "error_code": "InvalidRESTParameterError",
+          "message": "Invalid value for limit API parameter: 101 was found but -1 <= limit <= 100 is expected."
+        }
+      }
+    },
+    {
+      "sequence": 12,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?where=field_that_does_not_exist+%3D+1&limit=1",
+      "status": 400,
+      "contentType": "application/json",
+      "responseSummary": {
+        "errorBody": {
+          "error_code": "ODSQLError",
+          "message": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): where."
+        }
+      }
+    },
+    {
+      "sequence": 13,
+      "path": "/api/explore/v2.1/catalog/datasets/trees-with-species-and-dimensions-urban-forest/records?order_by=field_that_does_not_exist&limit=1",
+      "status": 400,
+      "contentType": "application/json",
+      "responseSummary": {
+        "errorBody": {
+          "error_code": "ODSQLError",
+          "message": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): order_by."
+        }
+      }
+    }
+  ],
+  "testCases": [
+    {
+      "id": "T01",
+      "name": "T01 Availability and shape @smoke",
+      "outcome": "passed",
+      "requestSequences": [
+        1,
+        2
+      ],
+      "values": {
+        "id": "T01",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "resultCount": 5,
+        "totalCount": 82064,
+        "sampleFieldNames": [
+          "com_id",
+          "common_name",
+          "scientific_name",
+          "genus",
+          "family",
+          "diameter_breast_height",
+          "year_planted",
+          "date_planted",
+          "age_description",
+          "useful_life_expectency",
+          "useful_life_expectency_value",
+          "precinct",
+          "located_in",
+          "uploaddate",
+          "coordinatelocation",
+          "latitude",
+          "longitude",
+          "easting",
+          "northing",
+          "geolocation"
+        ],
+        "sample": {
+          "com_id": "1023218",
+          "genus": "Platanus"
+        }
+      }
+    },
+    {
+      "id": "T02",
+      "name": "T02 Bounded pagination",
+      "outcome": "passed",
+      "requestSequences": [
+        3,
+        4
+      ],
+      "values": {
+        "id": "T02",
+        "firstStatus": 200,
+        "secondStatus": 200,
+        "firstContentType": "application/json; charset=utf-8",
+        "secondContentType": "application/json; charset=utf-8",
+        "firstPageLength": 5,
+        "secondPageLength": 5,
+        "firstOrderedIds": [
+          "1013381",
+          "1013382",
+          "1013383",
+          "1013384",
+          "1013385"
+        ],
+        "secondOrderedIds": [
+          "1013386",
+          "1013387",
+          "1013392",
+          "1013394",
+          "1013395"
+        ],
+        "firstIdSet": [
+          "1013381",
+          "1013382",
+          "1013383",
+          "1013384",
+          "1013385"
+        ],
+        "secondIdSet": [
+          "1013386",
+          "1013387",
+          "1013392",
+          "1013394",
+          "1013395"
+        ],
+        "distinctIdsAcrossPages": 10,
+        "orderingComparedAs": "text"
+      }
+    },
+    {
+      "id": "T03",
+      "name": "T03 Tree lookup consistency",
+      "outcome": "passed",
+      "requestSequences": [
+        5
+      ],
+      "values": {
+        "id": "T03",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "returnedRows": 1,
+        "source": {
+          "com_id": "1013381",
+          "genus": "Ulmus"
+        },
+        "lookup": {
+          "com_id": "1013381",
+          "genus": "Ulmus"
+        }
+      }
+    },
+    {
+      "id": "T04",
+      "name": "T04 Genus filter accuracy",
+      "outcome": "passed",
+      "requestSequences": [
+        6
+      ],
+      "values": {
+        "id": "T04",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "filterGenus": "Ulmus",
+        "returnedRows": 5,
+        "comparedGenusValues": [
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus",
+          "Ulmus"
+        ]
+      }
+    },
+    {
+      "id": "T07",
+      "name": "T07 Dataset total comparison",
+      "outcome": "passed",
+      "requestSequences": [
+        7,
+        8
+      ],
+      "values": {
+        "id": "T07",
+        "observedAtUtc": "2026-10-16T06:05:49.307Z",
+        "dataStatus": 200,
+        "metadataStatus": 200,
+        "dataContentType": "application/json; charset=utf-8",
+        "metadataContentType": "application/json; charset=utf-8",
+        "dataTotal": 82064,
+        "metadataTotal": 82064
+      }
+    },
+    {
+      "id": "T08",
+      "name": "T08 Unknown tree ID",
+      "outcome": "passed",
+      "requestSequences": [
+        9
+      ],
+      "values": {
+        "id": "T08",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "totalCount": 0,
+        "returnedRows": 0,
+        "results": []
+      }
+    },
+    {
+      "id": "T05",
+      "name": "T05 Page-size boundary 100 records",
+      "outcome": "passed",
+      "requestSequences": [
+        10
+      ],
+      "values": {
+        "id": "T05",
+        "inputLimit": 100,
+        "providerMaximum": 100,
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "returnedRows": 100
+      }
+    },
+    {
+      "id": "T05",
+      "name": "T05 Page-size boundary 101 records",
+      "outcome": "passed",
+      "requestSequences": [
+        11
+      ],
+      "values": {
+        "id": "T05",
+        "inputLimit": 101,
+        "providerMaximum": 100,
+        "status": 400,
+        "contentType": "application/json",
+        "errorMessage": "Invalid value for limit API parameter: 101 was found but -1 <= limit <= 100 is expected.",
+        "errorBody": {
+          "error_code": "InvalidRESTParameterError",
+          "message": "Invalid value for limit API parameter: 101 was found but -1 <= limit <= 100 is expected."
+        }
+      }
+    },
+    {
+      "id": "T06",
+      "name": "T06 Invalid query field in where",
+      "outcome": "passed",
+      "requestSequences": [
+        12
+      ],
+      "values": {
+        "id": "T06",
+        "clause": "where",
+        "invalidField": "field_that_does_not_exist",
+        "status": 400,
+        "contentType": "application/json",
+        "errorMessage": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): where.",
+        "errorBody": {
+          "error_code": "ODSQLError",
+          "message": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): where."
+        }
+      }
+    },
+    {
+      "id": "T06",
+      "name": "T06 Invalid query field in order_by",
+      "outcome": "passed",
+      "requestSequences": [
+        13
+      ],
+      "values": {
+        "id": "T06",
+        "clause": "order_by",
+        "invalidField": "field_that_does_not_exist",
+        "status": 400,
+        "contentType": "application/json",
+        "errorMessage": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): order_by.",
+        "errorBody": {
+          "error_code": "ODSQLError",
+          "message": "ODSQL query is malformed: Unknown field: field_that_does_not_exist. Clause(s) containing the error(s): order_by."
+        }
+      }
+    }
+  ]
+}
